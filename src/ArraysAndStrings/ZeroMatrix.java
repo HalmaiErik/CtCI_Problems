@@ -1,6 +1,6 @@
 package ArraysAndStrings;
 
-public class zeroMatrix {
+public class ZeroMatrix {
 
     static void nullifyRow(int[][] matrix, int row) {
         for (int j = 0; j < matrix[0].length; j++) {

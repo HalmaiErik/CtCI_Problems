@@ -3,7 +3,7 @@ package ArraysAndStrings;
 //O(n)
 //constant additional memory
 
-public class oneAway {
+public class OneAway {
     static boolean oneA(String s1, String s2) {
         if (Math.abs(s1.length() - s2.length()) > 1)
             return false;

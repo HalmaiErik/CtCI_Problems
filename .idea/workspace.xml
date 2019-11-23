@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c46294ed-5c62-42b4-9319-31244e64dbd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArraysAndStrings/stringRotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/DLLNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/RemoveDups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/zeroMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/zeroMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/checkPerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/CheckPerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/isUniqueA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/IsUniqueA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/isUniqueB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/IsUniqueB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/oneAway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/OneAway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/palindromePerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/PalindromePerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/rotateMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/RotateMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/stringCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/StringCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/stringRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/StringRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndStrings/zeroMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndStrings/ZeroMatrix.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +55,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.stringRotation">
-    <configuration name="oneAway" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.oneAway" />
+  <component name="RunManager" selected="Application.CheckPerm">
+    <configuration name="CheckPerm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.CheckPerm" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rotateMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.rotateMatrix" />
+    <configuration name="RotateMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.RotateMatrix" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stringCompression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.stringCompression" />
+    <configuration name="StringCompression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.StringCompression" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stringRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.stringRotation" />
+    <configuration name="StringRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.StringRotation" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="zeroMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.zeroMatrix" />
+    <configuration name="ZeroMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndStrings.ZeroMatrix" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.stringRotation" />
-        <item itemvalue="Application.zeroMatrix" />
-        <item itemvalue="Application.rotateMatrix" />
-        <item itemvalue="Application.stringCompression" />
-        <item itemvalue="Application.oneAway" />
+        <item itemvalue="Application.CheckPerm" />
+        <item itemvalue="Application.StringRotation" />
+        <item itemvalue="Application.ZeroMatrix" />
+        <item itemvalue="Application.RotateMatrix" />
+        <item itemvalue="Application.StringCompression" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +145,7 @@
       <workItem from="1574065905759" duration="623000" />
       <workItem from="1574066977385" duration="16000" />
       <workItem from="1574501414108" duration="8763000" />
-      <workItem from="1574525952225" duration="9943000" />
+      <workItem from="1574525952225" duration="13307000" />
     </task>
     <servers />
   </component>

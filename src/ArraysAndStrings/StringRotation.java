@@ -1,7 +1,7 @@
 package ArraysAndStrings;
 
 
-public class stringRotation {
+public class StringRotation {
     //check if s2 substring of s1
     public static boolean isSubstring(String s1, String s2) {
         return s1.contains(s2);

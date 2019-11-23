@@ -2,7 +2,7 @@ package ArraysAndStrings;
 
 // doesn't use additional memory but checks only for lowercase letters
 
-public class isUniqueB {
+public class IsUniqueB {
     // O(n)
     static boolean isUnique(String word) {
         if(word.length() > 26)

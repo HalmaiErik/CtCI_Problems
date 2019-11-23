@@ -3,7 +3,7 @@ package ArraysAndStrings;
 // palindrome => max 1 letter can be present an odd number of times
 // if more than 1 => not a palindrome
 
-public class palindromePerm {
+public class PalindromePerm {
     public static int getCharNumber(Character c) {
         int a = Character.getNumericValue('a');
         int z = Character.getNumericValue('z');

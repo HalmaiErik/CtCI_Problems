@@ -2,7 +2,7 @@ package ArraysAndStrings;
 
 //uses O(123) additional memory
 
-public class isUniqueA {
+public class IsUniqueA {
     // O(n)
     static boolean isUnique(String word) {
         if(word.length() > 128)

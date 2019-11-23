@@ -1,6 +1,6 @@
 package ArraysAndStrings;
 
-public class stringCompression {
+public class StringCompression {
     static String compress(String str) {
         String compressedStr = "";
         int nrConsecutiveChars = 0;

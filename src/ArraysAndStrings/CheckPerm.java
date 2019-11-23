@@ -2,7 +2,7 @@ package ArraysAndStrings;
 
 import java.util.Arrays;
 
-public class checkPerm {
+public class CheckPerm {
     //sort: O(n * log n)
     //equals: O(n)
     //toCharArr: O(n)

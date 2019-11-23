@@ -5,7 +5,7 @@ package ArraysAndStrings;
 // rotate by layers, as in edges : swap of 4(not the usual 2; using a temp)
 // O(n ^ 2)
 
-public class rotateMatrix {
+public class RotateMatrix {
     static boolean rotateImage(int[][] matrix) {
         int n = matrix.length;
         if(n == 0 || matrix[0].length != n)
