@@ -3,6 +3,7 @@ package LinkedLists;
 public class DLList {
     public DLLNode head;
     public DLLNode tail;
+    public int count;
 
     public DLList() {
         this.head = null;
@@ -11,6 +12,7 @@ public class DLList {
     public DLList(int arr[]) {
         DLLNode current = new DLLNode(arr[0]);
         DLLNode next = new DLLNode(arr[1]);
+        this.count = arr.length;
 
         for (int i = 1; i < arr.length; i++) {
             next = new DLLNode(arr[i]);
@@ -51,6 +53,7 @@ public class DLList {
     public void printHead() {
         System.out.println("Head: " + this.head.data);
         System.out.println("Tail: " + this.tail.data);
+        System.out.println("Count: " + this.count);
     }
 
 }
