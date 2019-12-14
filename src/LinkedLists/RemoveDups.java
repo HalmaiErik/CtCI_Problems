@@ -15,6 +15,11 @@ public class RemoveDups {
                     iter.prev.next = iter.next;
                 if(iter != dll.tail)
                     iter.next.prev = iter.prev;
+                else {
+                    dll.tail = iter.prev;
+                    iter.prev.next = null;
+                }
+                dll.count--;
             }
             else {
                 set.add(iter.data);
@@ -34,6 +39,11 @@ public class RemoveDups {
                         iter.prev.next = iter.next;
                     if(iter != dll.tail)
                         iter.next.prev = iter.prev;
+                    else {
+                        dll.tail = iter.prev;
+                        iter.prev.next = null;
+                    }
+                    dll.count--;
                     break;
                 }
                 runner = runner.next;

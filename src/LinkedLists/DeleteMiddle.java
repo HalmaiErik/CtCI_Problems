@@ -19,6 +19,6 @@ public class DeleteMiddle {
             iter.next.prev = null;
         }
         if(iter != dll.tail)
-            iter.next.prev = iter.prev
+            iter.next.prev = iter.prev;
     }
 }
