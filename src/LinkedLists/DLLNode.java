@@ -1,11 +1,13 @@
 package LinkedLists;
 
 public class DLLNode {
-    public DLLNode prev;
     public DLLNode next;
+    public DLLNode prev;
     public int data;
 
     public DLLNode(int data) {
         this.data = data;
+        this.next = null;
+        this.prev = null;
     }
 }
