@@ -11,6 +11,8 @@ public class DLList {
 
     public DLList(int arr[]) {
         DLLNode current = new DLLNode(arr[0]);
+        current.prev = null;
+        this.head = current;
         DLLNode next = new DLLNode(arr[1]);
         this.count = arr.length;
 
@@ -19,13 +21,10 @@ public class DLList {
             current.next = next;
             next.prev = current;
 
-            if(i == 1)
-                this.head = current;
-            else if(i == arr.length - 1)
-                this.tail = next;
-
             current = next;
         }
+        this.tail = next;
+        next.next = null;
     }
 
     public void printDLL() {

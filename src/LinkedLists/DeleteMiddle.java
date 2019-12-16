@@ -2,8 +2,12 @@ package LinkedLists;
 
 public class DeleteMiddle {
     static void delete(DLLNode node, DLList dll) {
+        if(node.data == dll.head.data || node.data == dll.tail.data) {
+            System.out.println("Tail or head can't be deleted");
+        }
+
         DLLNode iter = dll.head;
-        while(iter != null && iter != node) {
+        while(iter != null && iter.data != node.data) {
             iter = iter.next;
         }
 
@@ -12,13 +16,21 @@ public class DeleteMiddle {
             return;
         }
 
-        if(iter != dll.head)
-            iter.prev.next = iter.next;
-        else {
-            dll.head = iter.next;
-            iter.next.prev = null;
-        }
-        if(iter != dll.tail)
-            iter.next.prev = iter.prev;
+        iter.prev.next = iter.next;
+        iter.next.prev = iter.prev;
+        dll.count--;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 5, 1 ,5, 7, 8, 7};
+        DLList dll = new DLList(arr);
+        dll.printDLL();
+        dll.printDLLBw();
+        dll.printHead();
+        System.out.println();
+
+        DLLNode node = new DLLNode(5);
+        delete(node, dll);
+        dll.printDLL();
     }
 }
