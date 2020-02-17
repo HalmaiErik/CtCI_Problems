@@ -10,9 +10,9 @@ public class Partition {
                 before.insertEnd(iter.data);
             }
             else after.insertEnd(iter.data);
+            iter = iter.next;
         }
-        before.printDLL();
-        after.printDLL();
+
         if(before.isEmpty())
             return after;
         else {
