@@ -3,44 +3,25 @@ package LinkedLists;
 public class Partition {
     static DLList partition(DLList dll, int x) {
         DLLNode iter = dll.head;
+        DLList before = new DLList();
+        DLList after = new DLList();
         while(iter != null) {
             if(iter.data < x) {
-                DLLNode temp = iter;
-                if (iter != dll.head) {
-                    if (temp != dll.tail) {
-                        temp.next.prev = temp.prev;
-                        temp.prev.next = temp.next;
-                    } else {
-                        dll.tail = temp.prev;
-                        temp.prev.next = null;
-                    }
-
-                    temp.next = dll.head;
-                    dll.head.prev = temp;
-                    dll.head = temp;
-                    dll.head.prev = null;
-                }
+                before.insertEnd(iter.data);
             }
-
-            else if (iter != dll.tail) {
-                DLLNode temp = iter;
-                if(temp != dll.head) {
-                    temp.prev.next = temp.next;
-                    temp.next.prev = temp.prev;
-                }
-                else {
-                    dll.head = temp.next;
-                    temp.next.prev = null;
-                }
-
-                temp.prev = dll.tail;
-                dll.tail.next = temp;
-                dll.tail = temp;
-                dll.tail.next = null;
-            }
-            iter = iter.next;
+            else after.insertEnd(iter.data);
         }
-        return dll;
+        before.printDLL();
+        after.printDLL();
+        if(before.isEmpty())
+            return after;
+        else {
+            before.tail.next = after.head;
+            after.head.prev = before.tail;
+            before.tail = after.tail;
+            before.count += after.count;
+        }
+        return before;
     }
 
     public static void main(String[] args) {
@@ -48,10 +29,11 @@ public class Partition {
         DLList dll = new DLList(arr);
         dll.printDLL();
         dll.printDLLBw();
-        dll.printHead();
+        dll.printInfo();
         System.out.println();
 
-        dll = partition(dll, 5);
-        dll.printDLL();
+        DLList result = new DLList();
+        result = partition(dll, 5);
+        result.printDLL();
     }
 }

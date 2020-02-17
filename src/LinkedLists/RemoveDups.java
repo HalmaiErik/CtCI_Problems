@@ -57,7 +57,7 @@ public class RemoveDups {
         DLList dll = new DLList(arr);
         dll.printDLL();
         dll.printDLLBw();
-        dll.printHead();
+        dll.printInfo();
 
         System.out.println("After removal v1:");
         removeV1(dll);

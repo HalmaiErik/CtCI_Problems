@@ -7,6 +7,8 @@ public class DLList {
 
     public DLList() {
         this.head = null;
+        this.tail = null;
+        this.count = 0;
     }
 
     public DLList(int arr[]) {
@@ -25,6 +27,26 @@ public class DLList {
         }
         this.tail = next;
         next.next = null;
+    }
+
+    public void insertEnd(int x) {
+        DLLNode toInsert = new DLLNode(x);
+        if(this.head == null) {
+            this.head = toInsert;
+            this.tail = toInsert;
+            this.count++;
+            return;
+        }
+        this.tail.next = toInsert;
+        toInsert.prev = this.tail;
+        this.tail = toInsert;
+        this.count++;
+    }
+
+    public boolean isEmpty() {
+        if(this.head == null)
+            return true;
+        return false;
     }
 
     public void printDLL() {
@@ -49,7 +71,7 @@ public class DLList {
         System.out.println();
     }
 
-    public void printHead() {
+    public void printInfo() {
         System.out.println("Head: " + this.head.data);
         System.out.println("Tail: " + this.tail.data);
         System.out.println("Count: " + this.count);

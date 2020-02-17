@@ -26,7 +26,7 @@ public class DeleteMiddle {
         DLList dll = new DLList(arr);
         dll.printDLL();
         dll.printDLLBw();
-        dll.printHead();
+        dll.printInfo();
         System.out.println();
 
         DLLNode node = new DLLNode(5);

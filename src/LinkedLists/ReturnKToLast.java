@@ -20,7 +20,7 @@ public class ReturnKToLast {
         DLList dll = new DLList(arr);
         dll.printDLL();
         dll.printDLLBw();
-        dll.printHead();
+        dll.printInfo();
 
         kthLast(dll);
     }
