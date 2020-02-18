@@ -1,8 +1,21 @@
 package StackAndQueues;
 
 // Flexible splitting of arrays with shifts to avoid wasted memory
+// Inspired by https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2003.%20Stacks%20and%20Queues/Q3_01_Three_in_One/MultiStack.java
+
+import java.util.EmptyStackException;
 
 public class ThreeInOne {
+    private class FullStackException extends Exception {
+        public FullStackException() {
+            super();
+        }
+
+        public FullStackException(String msg) {
+            super(msg);
+        }
+    }
+
     private class StackInfo {
         public int start, size, capacity;
         public StackInfo(int start, int capacity) {
@@ -117,6 +130,67 @@ public class ThreeInOne {
         values[stack.start] = 0; // Clear item
         stack.start = nextInd(stack.start); // Move start
         stack.capacity--; // Shrink capacity
+    }
+
+    /**
+     * Expands stack by shifting over other stacks.
+     * @param stackNum The which we expand
+     */
+    private void expand(int stackNum) {
+        System.out.println("/// Expanding stack" + stackNum);
+
+        shift((stackNum + 1) % info.length);
+        info[stackNum].capacity++;
+    }
+
+    public void push(int stackNum, int value) throws FullStackException {
+        System.out.println("/// Pushing stack " + stackNum + ": " + value);
+        if (allStackAreFull()) {
+            throw new FullStackException();
+        }
+
+        /* If this stack is full, expand it. */
+        StackInfo stack = info[stackNum];
+        if (stack.isFull()) {
+            expand(stackNum);
+        }
+
+        /* Find the index of the top element in the array + 1,
+         * and increment the stack pointer */
+        stack.size++;
+        values[stack.lastElementInd()] = value;
+    }
+
+    public int pop(int stackNum) throws Exception {
+        System.out.println("/// Popping stack " + stackNum);
+        StackInfo stack = info[stackNum];
+        if (stack.isEmpty()) {
+            throw new EmptyStackException();
+        }
+
+        /* Remove last element. */
+        int value = values[stack.lastElementInd()];
+        values[stack.lastElementInd()] = 0; // Clear item
+        stack.size--; // Shrink size
+        return value;
+    }
+
+    public int peek(int stackNum) {
+        StackInfo stack = info[stackNum];
+        return values[stack.lastElementInd()];
+    }
+
+    public int[] getValues() {
+        return values;
+    }
+
+    public int[] getStackValues(int stackNum) {
+        StackInfo stack = info[stackNum];
+        int[] items = new int[stack.size];
+        for (int i = 0; i < items.length; i++) {
+            items[i] = values[adjustInd(stack.start + i)];
+        }
+        return items;
     }
 
 }
