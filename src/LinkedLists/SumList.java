@@ -16,9 +16,28 @@ public class SumList {
         DLList result = new DLList();
         DLLNode xIter = x.head;
         DLLNode yIter = y.head;
-        
+        int ten = 0;
 
-        while(xIter != null)
+        while(xIter != null) {
+            result.insertEnd((xIter.data + yIter.data + ten) % 10);
+
+            if(xIter.data + yIter.data + ten >= 10)
+                ten = 1;
+            else ten = 0;
+
+            xIter = xIter.next;
+            yIter = yIter.next;
+        }
+
+        if(yIter != null) {
+            result.insertEnd(xIter.data + yIter.data + ten);
+            while(yIter != null) {
+                result.insertEnd(yIter.data);
+                yIter = yIter.next;
+            }
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {
@@ -28,6 +47,7 @@ public class SumList {
         xList.printDLL();
         yList.printDLL();
 
-
+        DLList result = sumLL(xList, yList);
+        result.printDLL();
     }
 }
