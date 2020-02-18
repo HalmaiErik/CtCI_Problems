@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c46294ed-5c62-42b4-9319-31244e64dbd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueues/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueues/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueues/ThreeInOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedLists/SumList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedLists/SumList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +153,7 @@
       <workItem from="1581931075970" duration="5262000" />
       <workItem from="1581954570260" duration="2731000" />
       <workItem from="1581975935982" duration="279000" />
-      <workItem from="1582019762106" duration="460000" />
+      <workItem from="1582019762106" duration="5799000" />
     </task>
     <servers />
   </component>
