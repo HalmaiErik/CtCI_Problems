@@ -16,8 +16,8 @@ public class StackMin extends MyStack<Integer> {
 
     public void push(int value) {
         if(value <= min())
-            st.push(value);
-        super.push(value);
+            st.push(value); // Add to min stack
+        super.push(value);  // Add to main stack
     }
 
     public Integer pop() {
