@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c46294ed-5c62-42b4-9319-31244e64dbd9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueues/SortStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,20 +36,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.QueueViaStack">
-    <configuration name="DeleteMiddle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedLists.DeleteMiddle" />
-      <module name="CtCI-Problems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedLists.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SortStack">
     <configuration name="Partition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedLists.Partition" />
       <module name="CtCI-Problems" />
@@ -64,6 +52,19 @@
     </configuration>
     <configuration name="QueueViaStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StackAndQueues.QueueViaStack" />
+      <module name="CtCI-Problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StackAndQueues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StackAndQueues.SortStack" />
       <module name="CtCI-Problems" />
       <extension name="coverage">
         <pattern>
@@ -103,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortStack" />
         <item itemvalue="Application.QueueViaStack" />
         <item itemvalue="Application.StackMin" />
         <item itemvalue="Application.SumList" />
         <item itemvalue="Application.Partition" />
-        <item itemvalue="Application.DeleteMiddle" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,7 @@
       <workItem from="1582019762106" duration="6400000" />
       <workItem from="1582040583029" duration="3760000" />
       <workItem from="1582056998075" duration="2526000" />
-      <workItem from="1582147029386" duration="1539000" />
+      <workItem from="1582147029386" duration="3358000" />
     </task>
     <servers />
   </component>
@@ -182,22 +183,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="932" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576659861375" />
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1582148601040">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1582150139520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582148601040" />
-    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1582148601040">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582150139520" />
+    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1582150139520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582148601040" />
-    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1582148601040">
+    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582150139520" />
+    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1582150139519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582148601040" />
-    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1582148601040">
+    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582150139519" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1582150139520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582148601040" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582150139520" />
     <state x="848" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1582147028618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
