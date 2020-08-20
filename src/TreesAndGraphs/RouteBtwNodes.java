@@ -1,6 +1,6 @@
 package TreesAndGraphs;
 
-import StackAndQueues.MyQueue;
+import CH4_StackAndQueues.MyQueue;
 
 public class RouteBtwNodes {
     public enum State {
