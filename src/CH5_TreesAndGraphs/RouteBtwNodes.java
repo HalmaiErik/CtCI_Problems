@@ -1,4 +1,4 @@
-package TreesAndGraphs;
+package CH5_TreesAndGraphs;
 
 import CH4_StackAndQueues.MyQueue;
 
@@ -10,10 +10,6 @@ public class RouteBtwNodes {
     // Use BFS Algorithm
     public static boolean search(Graph g, GraphNode startNode, GraphNode endNode) {
         MyQueue<GraphNode> q = new MyQueue<GraphNode>();
-        // Set all vertices to black (= unvisited)
-        for(GraphNode n : g.getNodes()) {
-            n.state = State.WHITE;
-        }
 
         // Set start node as gray (= visiting)
         startNode.state = State.GRAY;
@@ -42,12 +38,12 @@ public class RouteBtwNodes {
         Graph g = new Graph();
         GraphNode[] temp = new GraphNode[6];
 
-        temp[0] = new GraphNode("a", 3);
-        temp[1] = new GraphNode("b", 0);
-        temp[2] = new GraphNode("c", 0);
-        temp[3] = new GraphNode("d", 1);
-        temp[4] = new GraphNode("e", 1);
-        temp[5] = new GraphNode("f", 0);
+        temp[0] = new GraphNode("a");
+        temp[1] = new GraphNode("b");
+        temp[2] = new GraphNode("c");
+        temp[3] = new GraphNode("d");
+        temp[4] = new GraphNode("e");
+        temp[5] = new GraphNode("f");
 
         temp[0].addChild(temp[1]);
         temp[0].addChild(temp[2]);

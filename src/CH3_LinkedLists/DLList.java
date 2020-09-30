@@ -11,7 +11,7 @@ public class DLList {
         this.count = 0;
     }
 
-    public DLList(int arr[]) {
+    public DLList(int[] arr) {
         DLLNode current = new DLLNode(arr[0]);
         current.prev = null;
         this.head = current;
@@ -44,9 +44,7 @@ public class DLList {
     }
 
     public boolean isEmpty() {
-        if(this.head == null)
-            return true;
-        return false;
+        return this.head == null;
     }
 
     public void printDLL() {

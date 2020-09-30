@@ -1,4 +1,4 @@
-package TreesAndGraphs;
+package CH5_TreesAndGraphs;
 
 public class TreeNode {
     private int data;
@@ -62,17 +62,53 @@ public class TreeNode {
         return createMinimalBST(sortedArr, 0, sortedArr.length - 1);
     }
 
-    public int height() {
+    public int[] heightAndBalance() {
         int leftHeight = 0;
         if(left != null)
-            leftHeight = left.height();
+            leftHeight = left.heightAndBalance()[0];
 
 
         int rightHeight = 0;
         if(right != null)
-            rightHeight = right.height();
+            rightHeight = right.heightAndBalance()[0];
 
-        return 1 + Math.max(leftHeight, rightHeight);
+        if (Math.abs(leftHeight - rightHeight) > 1) {
+            return new int[] {1 + Math.max(leftHeight, rightHeight), 0};
+        }
+        else {
+            return new int[] {1 + Math.max(leftHeight, rightHeight), 1};
+        }
+    }
+
+    public boolean validateBST() {
+        if (left != null) {
+            if (data < left.getData()) {
+                return false;
+            }
+            else left.validateBST();
+        }
+
+        if (right != null) {
+            if (data > right.getData()) {
+                return false;
+            }
+            else right.validateBST();
+        }
+
+        return true;
+    }
+
+    public int findSuccessor() {
+        if (right != null) {
+            return right.getData();
+        }
+        else {
+            TreeNode iter = this;
+            while (iter.parent.right == iter) {
+                iter = iter.parent;
+            }
+            return iter.parent.getData();
+        }
     }
 
     public void preOrder() {

@@ -1,17 +1,18 @@
-package TreesAndGraphs;
+package CH5_TreesAndGraphs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class ListOfDepths {
-    public static ArrayList<LinkedList<TreeNode>> listsOfDepths = new ArrayList<LinkedList<TreeNode>>();
+    public static List<LinkedList<TreeNode>> listsOfDepths = new ArrayList<LinkedList<TreeNode>>();
 
     public static void createListsOfDepths(TreeNode root, int level) {
         if(root == null)
             return;
         LinkedList<TreeNode> l = null;
         if(listsOfDepths.size() == level) {
-            // Level not contained in the list (levels are transfered in order)
+            // Level not contained in the list (levels are transferred in order)
             l = new LinkedList<TreeNode>();
             listsOfDepths.add(l);
         }
@@ -38,19 +39,9 @@ public class ListOfDepths {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         TreeNode root = TreeNode.createMinimalBST(arr);
 
-        System.out.println("Height: " + root.height());
-
-        System.out.println("Pre-order:");
-        root.preOrder();
-        System.out.println("\n");
-
         System.out.println("In-order:");
         root.inOrder();
-        System.out.println("\n");
-
-        System.out.println("Post-order:");
-        root.postOrder();
-        System.out.println("\n\n");
+        System.out.println();
 
         printLists(root);
     }

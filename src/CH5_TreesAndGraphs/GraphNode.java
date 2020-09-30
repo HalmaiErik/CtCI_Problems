@@ -1,19 +1,22 @@
-package TreesAndGraphs;
+package CH5_TreesAndGraphs;
 
 public class GraphNode {
+    private static final int maxChildrenCount = 15;
+
     private String name;
     private GraphNode[] children;
     private int childrenCount;
     public RouteBtwNodes.State state;
 
-    public GraphNode(String name, int childrenCount) {
+    public GraphNode(String name) {
         this.name = name;
         this.childrenCount = 0;
-        this.children = new GraphNode[childrenCount];
+        this.children = new GraphNode[maxChildrenCount];
+        this.state = RouteBtwNodes.State.WHITE;
     }
 
     public void addChild(GraphNode x) {
-        if(childrenCount < children.length) {
+        if(childrenCount < maxChildrenCount) {
             this.children[childrenCount] = x;
             childrenCount++;
         }
