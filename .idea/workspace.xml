@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c46294ed-5c62-42b4-9319-31244e64dbd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/BuildOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/CheckBalanced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/FirstCommonAncestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/Successor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/ValidateBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CH6_BitManipulation/BitTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CH3_LinkedLists/DLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH3_LinkedLists/DLList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/GraphNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/ListOfDepths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/ListOfDepths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/MinimalTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/MinimalTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/RouteBtwNodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/RouteBtwNodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreesAndGraphs/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/FirstCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CH5_TreesAndGraphs/FirstCommonAncestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +185,7 @@
       <workItem from="1600244397270" duration="2902000" />
       <workItem from="1600249624314" duration="2163000" />
       <workItem from="1600272373575" duration="1544000" />
-      <workItem from="1601470107884" duration="955000" />
+      <workItem from="1601470107884" duration="1046000" />
     </task>
     <servers />
   </component>
