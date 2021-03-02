@@ -1,0 +1,100 @@
+public enum Rank {
+	RESPONDENT (0),
+	MANAGER (1),
+	DIRECTOR (2);
+
+	private int index;
+
+	Rank(int index) {
+		this.index = index;
+	}
+}
+
+public abstract class Employee {
+	protected Rank rank;
+	protected boolean occupied;
+
+
+	public boolean isOccupied() {
+		return occupied;
+	}
+
+	public void setOccupied() {
+
+	}
+
+	public void unsetOccupied() {}
+}
+
+public class Respondent {
+	public Respondent() {
+		rank = Rank.RESPONDENT;
+	}
+}
+
+public class Manager {
+	public Manager() {
+		rank = Rank.MANAGER;
+	}
+}
+
+public class Director {
+	public Director() {
+		rank = Rank.DIRECTOR;
+	}
+}
+
+public class Caller {
+	public Caller() {...}
+}
+
+public class Call {
+	private Caller caller;
+	private Employee employee;
+
+	public Call(Caller caller) {
+		this.caller = caller;
+		rank = Rank.RESPONDENT;
+	}
+
+	public void putEmployeeOnCall(Employee employee) {
+		this.employee = employee;
+		this.employee.setOccupied();
+	}
+
+	public void endCall() {
+		employee.unsetOccupied();
+		employee = null;
+	}
+}
+
+public class CallCenter {
+	private static final int NO_RESPONDENTS = 10;
+	private static final int NO_MANAGERS = 5;
+	private static final int NO_DIRECTORS = 2;
+
+	<List<Call>> callQueue;
+	List<List<Employee>> employeeList;
+
+	private getFirstAvailableEmployee() {
+		for (List<Employee> list : callQueue) {
+			for (Employee employee : list) {
+				if (!employee.isOccupied()) {
+					return employee;
+				}
+			}
+		}
+		return null;
+	}
+
+	public void dispatchCall(Caller caller) {
+		Call call = new Call(caller);
+		Employee employee = getFirstAvailableEmployee();
+		if (employee != null) {
+			call.putEmployeeOnCall(employee);
+		}
+		else {
+			callQueue.add(Call);
+		}
+	}
+}

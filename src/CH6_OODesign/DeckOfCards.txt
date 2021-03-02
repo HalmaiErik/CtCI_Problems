@@ -1,0 +1,63 @@
+public enum Suit {
+	Diamond (0), 
+	Heart (1),
+	Clubs (2),
+	Spades (3);
+
+	private int index;
+
+	Suit(int index) {
+		this.index = index;
+	}
+
+	public static Suit make(int index) throws new IllegalArgumentException {
+		for (Suit suit : Suit.values()) {
+			if (suit.index == index) {
+				return suit;
+			}
+		}
+		throw new IllegalArgumentException("Wrong...");
+	}
+
+	public toInt() {
+		return index;
+	}
+}
+
+
+public abstract class Card {
+	private int value;
+	private Suit suit;
+	private boolean available;
+
+	public Card(int value, Suit suit) {...}
+
+	public abstrac int value();
+
+	public boolean isAvaialble() {...}
+	public void setAvaialble() {...}
+	public void unsetAvaialbe() {...}
+}
+
+// T extends Card so we can make any game with new rules
+
+public class Deck <T extends Card> {
+	private List<T> cards;
+}
+
+
+public class Hand <T extends Card> {
+	private List<T> cards;
+
+	public int score() {}
+}
+
+
+// implement new classes for Blackjack
+public class BlackjackCard extends Card {
+	
+}
+
+public class BlackJackHand extends Hand<BlackjackCard> {
+	
+}
