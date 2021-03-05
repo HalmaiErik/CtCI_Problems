@@ -62,22 +62,17 @@ public class TreeNode {
         return createMinimalBST(sortedArr, 0, sortedArr.length - 1);
     }
 
-    public int[] heightAndBalance() {
+    public int height() {
         int leftHeight = 0;
         if(left != null)
-            leftHeight = left.heightAndBalance()[0];
+            leftHeight = left.height();
 
 
         int rightHeight = 0;
         if(right != null)
-            rightHeight = right.heightAndBalance()[0];
+            rightHeight = right.height();
 
-        if (Math.abs(leftHeight - rightHeight) > 1) {
-            return new int[] {1 + Math.max(leftHeight, rightHeight), 0};
-        }
-        else {
-            return new int[] {1 + Math.max(leftHeight, rightHeight), 1};
-        }
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 
     public boolean validateBST() {
@@ -100,7 +95,11 @@ public class TreeNode {
 
     public int findSuccessor() {
         if (right != null) {
-            return right.getData();
+            TreeNode iter = this;
+            while (iter.left != null) {
+                iter = iter.left;
+            }
+            return iter.getData();
         }
         else {
             TreeNode iter = this;
